@@ -11,7 +11,7 @@ namespace ShootingDice
 
         public override void Play(Player other)
         {
-            Console.WriteLine($"{Name} looks at his opponent and says {Taunt}");
+            Console.WriteLine($"{Name} looks at his opponent and says '{Taunt}'");
             base.Play(other);
         }
 
