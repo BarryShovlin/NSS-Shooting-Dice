@@ -22,7 +22,15 @@ namespace ShootingDice
             }
             else if (myRoll < otherRoll)
             {
-                Console.WriteLine(myRoll / 0);
+                try
+                {
+                    Console.WriteLine(myRoll / 0);
+                }
+                catch(DivideByZeroException ex)
+                {
+                    Console.WriteLine($"{Name} is a sore loser... {ex.Message}");
+                }
+                
             }
             else
             {
@@ -30,5 +38,7 @@ namespace ShootingDice
                 Console.WriteLine("It's a tie");
             }
         }
+        
+        
     }
 }
