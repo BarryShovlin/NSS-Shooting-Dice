@@ -61,10 +61,22 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            Player loser = new SoreLoserPlayer();
+            loser.Name = "Freddie";
+            try
+            {
+                loser.Play(player2);
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine($"{loser.Name} is such a sore loser.. {ex.Message}");
+            }
+            Console.WriteLine("-------------------");
+
 
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, player4, plusOne, human, smack
+                player1, player2, player3, large, player4, plusOne, human, smack, loser
             };
 
             PlayMany(players);
