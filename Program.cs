@@ -74,10 +74,15 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            Player upSore = new SoreLoserUpperHalfPlayer();
+            upSore.Name = "Bing Crosby";
 
+            upSore.Play(human);
+
+            Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, player4, plusOne, human, smack, loser, ups
+                player1, player2, player3, large, player4, plusOne, human, smack, loser, ups, upSore
             };
 
             PlayMany(players);
