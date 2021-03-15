@@ -13,8 +13,18 @@ namespace ShootingDice
             Console.Write(">");
             string playerInput = Console.ReadLine();
             int humanRoll = Int32.Parse(playerInput);
-            return humanRoll;
+            if (humanRoll > 7 || humanRoll < 1)
+            {
+                Console.WriteLine("stop cheating!  1-6 this time");
+                Roll();
+                return humanRoll;
+            }
+            else
+            {
+                return humanRoll;
+            }
         }
+
 
         public override void Play(Player other)
         {

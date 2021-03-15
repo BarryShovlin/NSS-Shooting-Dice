@@ -14,72 +14,72 @@ namespace ShootingDice
             Player player2 = new Player();
             player2.Name = "Sue";
 
-            player2.Play(player1);
+            // player2.Play(player1);
 
-            Console.WriteLine("-------------------");
+            // Console.WriteLine("-------------------");
 
             Player player3 = new Player();
             player3.Name = "Wilma";
 
-            player3.Play(player2);
+            // player3.Play(player2);
 
-            Console.WriteLine("-------------------");
+            // Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
             large.Name = "Bigun Rollsalot";
 
-            player1.Play(large);
+            // player1.Play(large);
 
-            Console.WriteLine("-------------------");
+            // Console.WriteLine("-------------------");
 
             SmackTalkingPlayer player4 = new SmackTalkingPlayer("Ima come at you like a spider monkey!");
             player4.Name = "Slick Rick";
 
-            player4.Play(large);
+            // player4.Play(large);
 
-            Console.WriteLine("-------------------");
+            // Console.WriteLine("-------------------");
 
             Player plusOne = new OneHigherPlayer();
             plusOne.Name = "Turd Ferguson";
 
-            plusOne.Play(player4);
+            // plusOne.Play(player4);
 
-            Console.WriteLine("-------------------");
+            // Console.WriteLine("-------------------");
 
             Player human = new HumanPlayer();
             human.Name = "Jeremy Jam";
 
-            human.Play(player4);
+            // human.Play(player4);
 
-            Console.WriteLine("-------------------");
+            // Console.WriteLine("-------------------");
 
 
             CreativeSmackTalkingPlayer smack = new CreativeSmackTalkingPlayer();
             smack.Name = "Joe Mama";
 
-            smack.Play(player2);
+            // smack.Play(player2);
 
-            Console.WriteLine("-------------------");
+            // Console.WriteLine("-------------------");
 
             Player loser = new SoreLoserPlayer();
             loser.Name = "Freddie";
-            loser.Play(player3);
+            // loser.Play(player3);
 
-            Console.WriteLine("-------------------");
+            // Console.WriteLine("-------------------");
 
             Player ups = new UpperHalfPlayer();
             ups.Name = "Mr. Bigglesworth";
 
-            ups.Play(player4);
+            // ups.Play(player4);
 
-            Console.WriteLine("-------------------");
+            // Console.WriteLine("-------------------");
 
             Player upSore = new SoreLoserUpperHalfPlayer();
             upSore.Name = "Bing Crosby";
 
-            upSore.Play(human);
+            // upSore.Play(human);
 
-            Console.WriteLine("-------------------");
+            // Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large, player4, plusOne, human, smack, loser, ups, upSore
